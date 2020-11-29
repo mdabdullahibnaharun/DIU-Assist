@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1324.0" style="-fx-border-color: #97abc7; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diu.assist.pkg1.pkg0.ShowAllStudentsController">
+   <top>
+      <AnchorPane prefHeight="59.0" prefWidth="1228.0" style="-fx-background-color: #5d789e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="505.0" layoutY="5.0" prefHeight="49.0" prefWidth="242.0" text="Student Records" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="studentTable" layoutX="2.0" layoutY="67.0" prefHeight="600.0" prefWidth="1309.0">
+              <columns>
+                <TableColumn fx:id="slnoColl" prefWidth="91.0" text="SL. No." />
+                <TableColumn fx:id="idColl" prefWidth="135.0" text="ID" />
+                  <TableColumn fx:id="batchColl" prefWidth="84.0" text="Batch" />
+                  <TableColumn fx:id="nameColl" prefWidth="219.0" text="Name" />
+                  <TableColumn fx:id="mobileColl" prefWidth="173.0" text="Mobile" />
+                  <TableColumn fx:id="emailColl" prefWidth="242.0" text="Email" />
+                  <TableColumn fx:id="sectionColl" prefWidth="96.0" text="Section" />
+                  <TableColumn fx:id="departmentColl" prefWidth="262.0" text="Department" />
+              </columns>
+            </TableView>
+            <Button layoutX="109.0" layoutY="702.0" mnemonicParsing="false" onAction="#deleteRecords" prefHeight="41.0" prefWidth="242.0" text="Delete">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_delete_database_128px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1325.0" style="-fx-border-color: #97abc7; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diu.assist.pkg1.pkg0.ShowAllTeachersController">
+   <top>
+      <AnchorPane prefHeight="54.0" prefWidth="1325.0" style="-fx-background-color: #5d789e;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="543.0" layoutY="5.0" text="Teachers Record" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="teacherTable" cache="true" layoutX="2.0" layoutY="46.0" prefHeight="574.0" prefWidth="1310.0">
+              <columns>
+                <TableColumn fx:id="slnoColl" prefWidth="75.0" text="SL. No." />
+                <TableColumn fx:id="idColl" prefWidth="132.0" text="ID " />
+                  <TableColumn fx:id="tiColl" prefWidth="63.0" text="TI" />
+                  <TableColumn fx:id="nameColl" prefWidth="165.0" text="Name" />
+                  <TableColumn fx:id="mobileColl" prefWidth="154.0" text="Mobie" />
+                  <TableColumn fx:id="emailCOll" prefWidth="175.0" text="Email" />
+                  <TableColumn fx:id="coursecodeColl" prefWidth="112.0" text="Course Code" />
+                  <TableColumn fx:id="coursenameColl" prefWidth="164.0" text="Course Name" />
+                  <TableColumn fx:id="departmentColl" prefWidth="135.0" text="Department" />
+                  <TableColumn fx:id="facultyColl" prefWidth="129.0" text="Faculty" />
+              </columns>
+            </TableView>
+            <Button layoutX="105.0" layoutY="651.0" mnemonicParsing="false" onAction="#tdeleteBtn" prefHeight="45.0" prefWidth="242.0" text="Delete" textAlignment="CENTER">
+               <graphic>
+                  <ImageView disable="true" fitHeight="33.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_delete_database_128px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
