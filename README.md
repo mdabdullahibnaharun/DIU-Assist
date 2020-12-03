@@ -55,15 +55,25 @@ Login key : userid@diu.edu.bd
 
 #### Implement Software
 IDE: Netbeans IDE for Java EE Developers
+
 JDK version: 1.8
+
 Download Link : https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html
+
 Libraries:
+
 MySQL JDBC Driver.
+
 Jfoinex 8.0.jar
-Fontawsomfx 8.2.jar’
+
+Fontawsomfx 8.2.jar
+
 Java DB Driver.
+
 Database Manager: XAMPP  Version: 7.4.12
+
 DBMS: MySQL.
+
 Download Link: https://www.apachefriends.org/download.html
 
 #### Database Connection: 
