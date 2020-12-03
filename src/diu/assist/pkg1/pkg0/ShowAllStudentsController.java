@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -14,11 +15,21 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -26,12 +37,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
  * @author Dell
  */
 public class ShowAllStudentsController implements Initializable {
-
-
+    public static Student student1;
+    public static  Stage stage3;
 
     public ShowAllStudentsController() {
     }
-
+    @FXML
+    private Label studentcount;
+    @FXML
+    private TextField ssearchField;
+    @FXML
+    private Text searchresultlable;
     @FXML
     private TableView<Student> studentTable;
     @FXML
@@ -60,6 +76,7 @@ public class ShowAllStudentsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        searchresultlable.setText("");
         studentTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         AddStudentLayoutController.stdList.clear();
 
@@ -69,6 +86,9 @@ public class ShowAllStudentsController implements Initializable {
         } catch (SQLException ex) {
             Logger.getLogger(ShowAllStudentsController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        studentcount.setText(" Total Students : "+AddStudentLayoutController.stdList.size());
+        studentcount.setAlignment(Pos.CENTER);
 
         slnoColl.setCellValueFactory(new PropertyValueFactory<Student, Integer>("slno"));
         idColl.setCellValueFactory(new PropertyValueFactory<Student, String>("id"));
@@ -80,23 +100,64 @@ public class ShowAllStudentsController implements Initializable {
         departmentColl.setCellValueFactory(new PropertyValueFactory<Student, String>("department"));
 
         studentTable.setItems(AddStudentLayoutController.stdList);
-        
+
     }
 
     @FXML
     private void deleteRecords(ActionEvent event) throws SQLException {
-        try{
-        ObservableList<Student> selectedStudents = FXCollections.observableArrayList();
-        selectedStudents = studentTable.getSelectionModel().getSelectedItems();
+        try {
+            ObservableList<Student> selectedStudents = FXCollections.observableArrayList();
+            selectedStudents = studentTable.getSelectionModel().getSelectedItems();
 
-        SDatabaseAction sdbAction = new SDatabaseAction();
-        sdbAction.deletStudents(selectedStudents);
-        AddStudentLayoutController.stdList.removeAll(selectedStudents);
-          }catch(EnumConstantNotPresentException w){
-            
+            SDatabaseAction sdbAction = new SDatabaseAction();
+            sdbAction.deletStudents(selectedStudents);
+            if (AddStudentLayoutController.stdList.removeAll(selectedStudents)) {
+                searchresultlable.setText("Data Deleted Successfully");
+            }
+        } catch (SQLException e) {
+            searchresultlable.setText("Sorry Cannot Delete Those Data");
         }
 
     }
 
+    @FXML
+    private void searchBtn(ActionEvent event) {
+        String id = ssearchField.getText();
+        if (id.equals("")) {
+            searchresultlable.setText("");
+            return;
+        }
+        ObservableList<Student> Students = AddStudentLayoutController.stdList;
+        for (Student std : Students) {
+            if (std.getId().contains(id)) {
+                searchresultlable.setText(std.toString());
+                break;
+            } else {
+                searchresultlable.setText("Sorry Data Not Found");
+            }
+        }
+    }
+
+    @FXML
+    private void updateRecord(ActionEvent event) {
+        studentTable.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        student1 = studentTable.getSelectionModel().getSelectedItem();
+        if(student1 == null){
+            return;
+        }
+        try {
+            Parent pane3 = FXMLLoader.load(getClass().getResource("UpdateStudentLayout.fxml"));
+            Scene scene3 = new Scene(pane3);
+            Image ico3 = new Image("/icons/mainicon.png");
+            stage3 = new Stage() ;
+            stage3.setScene(scene3);
+            stage3.setTitle("DIU Assist 1.5");
+            stage3.getIcons().add(ico3);
+            stage3.resizableProperty().set(false);
+            stage3.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

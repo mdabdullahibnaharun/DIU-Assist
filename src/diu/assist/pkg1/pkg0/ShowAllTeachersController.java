@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -14,11 +15,20 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -26,10 +36,19 @@ import javafx.scene.control.cell.PropertyValueFactory;
  * @author Dell
  */
 public class ShowAllTeachersController implements Initializable {
+    
+    public static Teacher teacher1;
+    public static Stage stage4;
 
+    
     public ShowAllTeachersController() {
     }
-
+    @FXML
+    private TextField tsearchField;
+    @FXML
+    private Text searchresultlable;
+    @FXML
+    private Label teachercount;
     @FXML
     private TableView<Teacher> teacherTable;
     @FXML
@@ -61,15 +80,19 @@ public class ShowAllTeachersController implements Initializable {
         // TODO
         teacherTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         AddTeacherLayoutController.teachList.clear();
-
+        searchresultlable.setText("");
+        
         TDatabaseAction tdbAction = new TDatabaseAction();
-
+        
         try {
             AddTeacherLayoutController.teachList = tdbAction.getAllTeachers();
         } catch (SQLException ex) {
             Logger.getLogger(ShowAllTeachersController.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
+        teachercount.setText(" Total Techers : "+AddTeacherLayoutController.teachList.size());
+        teachercount.setAlignment(Pos.CENTER);
+        
         slnoColl.setCellValueFactory(new PropertyValueFactory<Teacher, Integer>("tslno"));
         idColl.setCellValueFactory(new PropertyValueFactory<Teacher, String>("tid"));
         tiColl.setCellValueFactory(new PropertyValueFactory<Teacher, String>("tteacherinitial"));
@@ -80,23 +103,64 @@ public class ShowAllTeachersController implements Initializable {
         coursenameColl.setCellValueFactory(new PropertyValueFactory<Teacher, String>("tcoursename"));
         departmentColl.setCellValueFactory(new PropertyValueFactory<Teacher, String>("tdepartment"));
         facultyColl.setCellValueFactory(new PropertyValueFactory<Teacher, String>("tfaculty"));
-
+        
         teacherTable.setItems(AddTeacherLayoutController.teachList);
-
+        
     }
-
+    
     @FXML
     private void tdeleteBtn(ActionEvent event) throws SQLException {
-        try{
-        ObservableList<Teacher> selectedTeachers = FXCollections.observableArrayList();
-        selectedTeachers = teacherTable.getSelectionModel().getSelectedItems();
-
-        TDatabaseAction tdbAction = new TDatabaseAction();
-        tdbAction.deletTeachers(selectedTeachers);
-        AddTeacherLayoutController.teachList.removeAll(selectedTeachers);
-          }catch(EnumConstantNotPresentException w){
+        try {
+            ObservableList<Teacher> selectedTeachers = FXCollections.observableArrayList();
+            selectedTeachers = teacherTable.getSelectionModel().getSelectedItems();
             
+            TDatabaseAction tdbAction = new TDatabaseAction();
+            tdbAction.deletTeachers(selectedTeachers);
+           if( AddTeacherLayoutController.teachList.removeAll(selectedTeachers)){
+                      searchresultlable.setText("Data Deleted Successfully");
+           }
+        } catch (SQLException e) {
+            searchresultlable.setText("Sorry Cannot Delete Those Data");
+        }
+    }
+    
+    @FXML
+    private void searchBtn(ActionEvent event) {
+        String id = tsearchField.getText();
+        if (id.equals("")) {
+            searchresultlable.setText("");
+            return;
+        }
+        ObservableList<Teacher> teachers = AddTeacherLayoutController.teachList;
+        for (Teacher teach : teachers) {
+            if (teach.getTid().contains(id)) {
+                searchresultlable.setText(teach.toString());
+                break;
+            } else {
+                searchresultlable.setText("Sorry Data Not Found");
+            }
         }
     }
 
+    @FXML
+    private void tupdateRecord(ActionEvent event) throws IOException {
+        teacherTable.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        teacher1 = teacherTable.getSelectionModel().getSelectedItem();
+        if(teacher1==null){
+            return ;
+        }
+        try{
+            Parent pane4 = FXMLLoader.load(getClass().getResource("UpdateteacherLayout.fxml"));
+            Scene scene4 = new Scene(pane4);
+            Image ico4 = new Image("/icons/mainicon.png");
+            stage4 = new Stage();
+            stage4.setScene(scene4);
+            stage4.setTitle("DIU Assist 1.5");
+            stage4.getIcons().add(ico4);
+            stage4.resizableProperty().set(false);
+            stage4.show();
+        }catch(IOException e){
+        }
+    }
+    
 }

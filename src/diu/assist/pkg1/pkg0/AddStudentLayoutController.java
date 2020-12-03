@@ -114,7 +114,7 @@ public class AddStudentLayoutController implements Initializable {
         String section = sectionField.getText();
         String department = departmentField.getText();
 
-        if (name.equals("") && batch.equals("")&& id.equals("")) {
+        if (name.equals("") || batch.equals("") || id.equals("")) {
             notification.setText("Please Enter NAME , Id & BATCH");
             return;
         }
@@ -190,7 +190,7 @@ public class AddStudentLayoutController implements Initializable {
             departmentField.clear();
             notification.setText(r);
         } catch (SQLException e) {
-            notification.setText("Cannot insert To DBMS");
+            notification.setText("Cannot insert To Database");
             //e.printStackTrace();
         }
     }

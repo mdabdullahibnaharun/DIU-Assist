@@ -101,7 +101,7 @@ public class AddTeacherLayoutController implements Initializable {
         String tdepartment = tdepartmentField.getText();
         String tfaculty = tfacultyField.getText();
 
-        if (tname.equals("") && tteacherinitial.equals("") && tid.equals("") && tcoursecode.equals("")) {
+        if (tname.equals("") || tteacherinitial.equals("") || tid.equals("") || tcoursecode.equals("")) {
             notification.setText("Please Enter Name , Id  , TI , Course Code");
             return;
         }

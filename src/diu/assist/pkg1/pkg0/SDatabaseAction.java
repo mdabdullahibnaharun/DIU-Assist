@@ -36,7 +36,7 @@ public class SDatabaseAction implements Initializable{
     
     
 
-    Connection getConnection() throws SQLException{
+    public Connection getConnection() throws SQLException{
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/diuassist_dbms","root","");
         Statement statement = conn.createStatement();
         statement.close();
@@ -45,7 +45,7 @@ public class SDatabaseAction implements Initializable{
         
     }
    
-    ObservableList<Student> getAllStudents() throws SQLException {
+    public ObservableList<Student> getAllStudents() throws SQLException {
 
         ObservableList<Student> stdList = FXCollections.observableArrayList();
 
@@ -69,12 +69,12 @@ public class SDatabaseAction implements Initializable{
             Student student = new Student(slno, id, batch, name, mobile, email, section, department);
             stdList.add(student);
         }
-         statement.close();
+        statement.close();
         return stdList;
 
     }
 
-    String insertStudent(Student student) throws SQLException {
+    public String insertStudent(Student student) throws SQLException {
         Connection conn = getConnection();
         Statement statement = conn.createStatement();
         String query = "insert into student "+"values("+student.getSlno()+",'"+student.getId()+"','"+student.getBatch()+"','"+student.getName()+"','"+student.getMobile()+"','"+student.getEmail()+"','"+student.getSection()+"','"+student.getDepartment()+"')";
@@ -88,15 +88,27 @@ public class SDatabaseAction implements Initializable{
         }
     }
 
-    void deletStudents(ObservableList<Student> selectedStudents) throws SQLException {
-     Connection conn = getConnection();
-     Statement statement = conn.createStatement();
-
-        for (Student students : selectedStudents) {
-            String query = "delete from student where sl = " + students.getSlno();
-            int executeUpdate = statement.executeUpdate(query);
+    public void deletStudents(ObservableList<Student> selectedStudents) throws SQLException {
+        Connection conn = getConnection();
+        try (Statement statement = conn.createStatement()) {
+            for (Student students : selectedStudents) {
+                String query = "delete from student where sl = " + students.getSlno();
+                int executeUpdate = statement.executeUpdate(query);
+            }
         }
-         statement.close();
+    }
+    
+    public void updateStudent(Student std) throws SQLException{
+        Student student = std;
+        Connection conn = getConnection();
+        Statement statement = conn.createStatement();
+        try{
+            String query  = " UPDATE student SET id = '"+student.getId()+"', batch = '"+student.getBatch()+"', name = '"+student.getName()+"', mobile = '"+student.getMobile()+"',email = '"+student.getEmail()+"', section = '"+student.getSection()+"', department = '"+student.getDepartment()+"' WHERE sl= "+student.getSlno()+";";
+            statement.executeUpdate(query);
+            statement.close();
+        }catch(SQLException e){
+            
+        }
     }
 
  

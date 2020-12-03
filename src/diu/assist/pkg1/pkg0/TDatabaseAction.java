@@ -78,19 +78,30 @@ public class TDatabaseAction implements Initializable{
             statement.close();
             return "Failed";
         }
-  
     }
+    
     
     void deletTeachers(ObservableList<Teacher> selectedteachers) throws SQLException{
         Connection conn = getConnection();
-        Statement statement = conn.createStatement();
-        
-        for(Teacher teachers : selectedteachers){
-            String query = "delete from teacher where tslno = " +teachers.getTslno();
-            int executeUpade = statement.executeUpdate(query);
+        try (Statement statement = conn.createStatement()) {
+            for(Teacher teachers : selectedteachers){
+                String query = "delete from teacher where tslno = " +teachers.getTslno();
+                int executeUpade = statement.executeUpdate(query);
+            }
         }
-        
-        statement.close();
+    }
+    
+    public void updateTeacher(Teacher teach)throws SQLException{
+        Teacher teacher = teach;
+        Connection conn = getConnection();
+        Statement statement = conn.createStatement();
+        try{
+            String query  = " UPDATE teacher SET tid = '"+teacher.getTid()+"', tteacherinitial = '"+teacher.getTteacherinitial()+"', tname = '"+teacher.getTname()+"', tmobile = '"+teacher.getTmobile()+"', temail = '"+teacher.getTemail()+"', tcoursecode = '"+teacher.getTcoursecode()+"', tcoursename ='"+teacher.getTcoursename()+"', tdepartment = '"+teacher.getTdepartment()+"', tfaculty = '"+teacher.getTfaculty()+"' WHERE tslno = "+teacher.getTslno()+";";
+            statement.executeUpdate(query);
+            statement.close();
+        }catch(SQLException e){
+            
+        }
     }
 
 

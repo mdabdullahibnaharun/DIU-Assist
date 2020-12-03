@@ -64,19 +64,21 @@ public class MainStage1Controller extends Thread implements Initializable {
             stage1.setOnCloseRequest((WindowEvent e) -> {
                 stage1.close();
                 WebviewprojectController.webengine.load("");
+
                 if (!clock.isAlive()) {
+                    System.exit(0);
                     return;
                 } else {
                     clock.stop();
+                    System.exit(0);
                 }
                 System.exit(0);
             });
-        } catch (EnumConstantNotPresentException e) {
-
+        } catch (Exception e) {
         }
 
     }
-    
+
     @FXML
     private void aboutUs(ActionEvent event) {
         try {
@@ -84,7 +86,7 @@ public class MainStage1Controller extends Thread implements Initializable {
             String url = "https://sites.google.com/diu.edu.bd/fantasticfour/about-fantastic-four?authuser=0";
             WebviewprojectController.webengine.load(url);
             mainContant.setCenter(child);
-        }catch(IOException ex){
+        } catch (IOException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -98,8 +100,8 @@ public class MainStage1Controller extends Thread implements Initializable {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-        @FXML
+
+    @FXML
     private void addStdData(ActionEvent event) {
         try {
             Parent child = FXMLLoader.load(getClass().getResource("AddStudentLayout.fxml"));
@@ -111,7 +113,7 @@ public class MainStage1Controller extends Thread implements Initializable {
 
     @FXML
     private void addTecData(ActionEvent event) {
-         try {
+        try {
             Parent child = FXMLLoader.load(getClass().getResource("AddTeacherLayout.fxml"));
             mainContant.setCenter(child);
         } catch (IOException ex) {
@@ -121,7 +123,7 @@ public class MainStage1Controller extends Thread implements Initializable {
 
     @FXML
     private void showSudents(ActionEvent event) {
-         try {
+        try {
             Parent child = FXMLLoader.load(getClass().getResource("ShowAllStudents.fxml"));
             mainContant.setCenter(child);
         } catch (IOException ex) {
@@ -143,9 +145,17 @@ public class MainStage1Controller extends Thread implements Initializable {
     private void logout(ActionEvent event) {
         DIUAssist10.stage.show();
         FXMLDocumentController.stage1.close();
+
         if (clock.isAlive()) {
             clock.stop();
         }
+        if (ShowAllStudentsController.stage3 != null) {
+            ShowAllStudentsController.stage3.close();
+        }
+        if (ShowAllTeachersController.stage4 != null) {
+            ShowAllTeachersController.stage4.close();
+        }
+
     }
 
     private void timedate(boolean valu) {

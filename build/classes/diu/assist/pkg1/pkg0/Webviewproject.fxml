@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane id="AnchorPane" prefHeight="863.0" prefWidth="1376.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diu.assist.pkg1.pkg0.WebviewprojectController">
+<AnchorPane id="AnchorPane" prefHeight="863.0" prefWidth="1393.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diu.assist.pkg1.pkg0.WebviewprojectController">
    <children>
       <BorderPane fx:id="webpane" prefHeight="856.0" prefWidth="1387.0">
          <top>
@@ -227,7 +227,7 @@
             </AnchorPane>
          </top>
          <center>
-            <WebView fx:id="webview" prefHeight="795.0" prefWidth="1376.0" BorderPane.alignment="CENTER" />
+            <WebView fx:id="webview" prefHeight="784.0" prefWidth="1401.0" BorderPane.alignment="CENTER" />
          </center>
       </BorderPane>
    </children>

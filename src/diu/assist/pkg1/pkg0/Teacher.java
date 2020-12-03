@@ -121,7 +121,7 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Teacher{" + "tslno=" + tslno + ", tid=" + tid + ", tteacherinitial=" + tteacherinitial + ", tname=" + tname + ", tmobile=" + tmobile + ", temail=" + temail + ", tcoursecode=" + tcoursecode + ", tcoursename=" + tcoursename + ", tdepartment=" + tdepartment + ", tfaculty=" + tfaculty + '}';
+        return "SL No. : " + tslno + ", Id: " + tid + ", TI : " + tteacherinitial + ", Name : " + tname + ", Email : " + temail + ", Coursecode : " + tcoursecode + ", Dept. :" + tdepartment + ", Faculty : " + tfaculty ;
     }
 
      

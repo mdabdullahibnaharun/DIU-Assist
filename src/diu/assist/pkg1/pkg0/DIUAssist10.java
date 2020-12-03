@@ -7,6 +7,8 @@
  */
 package diu.assist.pkg1.pkg0;
 
+import static diu.assist.pkg1.pkg0.FXMLDocumentController.stage1;
+import static diu.assist.pkg1.pkg0.MainStage1Controller.clock;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -58,6 +60,14 @@ public class DIUAssist10 extends Application {
         });
         }catch(EnumConstantNotPresentException e){
             
+        }
+        
+        try {
+            stage.setOnCloseRequest((WindowEvent e) -> {
+                stage.close();
+                System.exit(0);
+            });
+        } catch (Exception e) {
         }
                 
     }

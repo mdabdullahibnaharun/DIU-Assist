@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DIU Assist 1.2.jnlp">
+  <information>
+    <title>DIU Assist 1.2</title>
+    <vendor>Dell</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\derby.jar" size="3104883" download="eager" />
+    <jar href="lib\derbyclient.jar" size="585704" download="eager" />
+    <jar href="lib\derbynet.jar" size="266471" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\jfoenix-8.0.4.jar" size="2487326" download="eager" />
+    <jar href="lib\jxbrowser-7.12.jar" size="9690812" download="eager" />
+    <jar href="lib\jxbrowser-javafx-7.12.jar" size="179173" download="eager" />
+    <jar href="lib\kotlin-runtime.jar" size="878511" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DIU Assist 1.2" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="diu.assist.pkg1.pkg0.DIUAssist10"  name="DIU Assist 1.2" />
+  <update check="always"/>
+</jnlp>
