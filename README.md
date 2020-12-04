@@ -1,4 +1,4 @@
-# DIU-Assist-1.2
+# DIU-Assist-1.5
 Basically our software will handle the all basic work of a computer science  student.  where all the teachers and students info will be given, all social and important link also. There is also a login option for user, in this software it have its own browser which will make comfort for user.
 
 ## Project Title : DIU Student Support System.
@@ -159,5 +159,10 @@ teacher: Using this database you can add a teacher’s information and delete th
 
 #### Conclusion:
 This was a great experience doing this project. This project was intended to make the DIU system easier and reliable. I hope the intention of the program gets full filled.. The challenges we faced and the learning we have gone through will come in great help in the future.
+
+  ~~Thank you for using our application~~ 
+  
+  
+DIU Assist v1.5 © Fantastic Four ©2020 Fantastic Four. All rights reserved
 
 
