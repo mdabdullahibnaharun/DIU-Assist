@@ -7,8 +7,6 @@
  */
 package diu.assist.pkg1.pkg0;
 
-import static diu.assist.pkg1.pkg0.FXMLDocumentController.stage1;
-import static diu.assist.pkg1.pkg0.MainStage1Controller.clock;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

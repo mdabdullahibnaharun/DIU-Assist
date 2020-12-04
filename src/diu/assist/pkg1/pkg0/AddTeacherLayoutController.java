@@ -81,7 +81,9 @@ public class AddTeacherLayoutController implements Initializable {
                 notification.setText("This SL no is already exist!! Please Try Another");
                 break;
             }
+            return;
         }
+        
     }
 
     @FXML

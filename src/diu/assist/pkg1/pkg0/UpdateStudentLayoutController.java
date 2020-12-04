@@ -21,7 +21,7 @@ import javafx.scene.control.TextField;
  * @author Dell
  */
 public class UpdateStudentLayoutController implements Initializable {
-    
+
     @FXML
     private Label notification;
     @FXML
@@ -38,7 +38,7 @@ public class UpdateStudentLayoutController implements Initializable {
     private TextField sectionField;
     @FXML
     private TextArea departmentField;
-    
+
     private Student student2;
     @FXML
     private TextField batchField;
@@ -64,9 +64,9 @@ public class UpdateStudentLayoutController implements Initializable {
         sectionField.setText(student2.getSection());
         batchField.setText(student2.getBatch());
         departmentField.setText(student2.getDepartment());
-        
-    }    
-    
+
+    }
+
     @FXML
     private void reset(ActionEvent event) {
         slnoField.clear();
@@ -79,31 +79,40 @@ public class UpdateStudentLayoutController implements Initializable {
         departmentField.clear();
         notification.setText("");
     }
-    
+
     @FXML
     private void update(ActionEvent event) throws SQLException {
-        
-        try{
-        SDatabaseAction sdbAction = new SDatabaseAction();
-        if(slnoField.getText().equals("")){
-            notification.setText("Please Enter Serial. No For Update..");
-            return;
-        }
-        int slno = Integer.parseInt(slnoField.getText());
-        String id = idField.getText();
-        String batch = batchField.getText();
-        String name = nameField.getText();
-        String mobile = mobileField.getText();
-        String email = emailField.getText();
-        String section = sectionField.getText();
-        String department = departmentField.getText();
-        
-        Student std = new Student(slno, id, batch, name, mobile, email, section, department);
-        sdbAction.updateStudent(std);
-        notification.setText("Data Updated Successfully...");
-        }catch(NumberFormatException e){
+
+        try {
+            SDatabaseAction sdbAction = new SDatabaseAction();
+            if (slnoField.getText().equals("")) {
+                notification.setText("Please Enter Serial. No For Update..");
+                return;
+            }
+            int slno = Integer.parseInt(slnoField.getText());
+            String id = idField.getText();
+            String batch = batchField.getText();
+            String name = nameField.getText();
+            String mobile = mobileField.getText();
+            String email = emailField.getText();
+            String section = sectionField.getText();
+            String department = departmentField.getText();
+
+            Student std = new Student(slno, id, batch, name, mobile, email, section, department);
+            sdbAction.updateStudent(std);
+            notification.setText("Data Updated Successfully...");
+            slnoField.clear();
+            nameField.clear();
+            idField.clear();
+            emailField.clear();
+            mobileField.clear();
+            sectionField.clear();
+            batchField.clear();
+            departmentField.clear();
+            notification.setText("");
+        } catch (NumberFormatException e) {
             notification.setText("Sorry Can't Update Data to DataBase");
         }
     }
-    
+
 }

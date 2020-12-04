@@ -45,7 +45,7 @@ public class FXMLDocumentController implements Initializable {
     private void submitBtn(ActionEvent event) throws IOException {
         notificationLable.setText("");
         String substr1 = "@diu.edu.bd";
-        String substr2 = "bd";
+        //String substr2 = "bd";
         String substr3 = "@daffodilvarsity.edu.bd";
         mail = emailField.getText();
 
@@ -53,7 +53,7 @@ public class FXMLDocumentController implements Initializable {
         if ("".equals(mail)) {
             return;
         }
-        if (toLowerCase.contains(substr1) ||toLowerCase.contains(substr2)||toLowerCase.contains(substr3) ) {
+        if (toLowerCase.contains(substr1)||toLowerCase.contains(substr3) ) {
             //emailField.setText("---Login Sucessfull!---");
             emailField.clear();
             stage.close();
