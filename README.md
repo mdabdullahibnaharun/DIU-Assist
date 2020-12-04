@@ -152,6 +152,9 @@ teacher: Using this database you can add , seach , update a teacher’s informat
 •	Faced Some Little bugs.
 
 
+#### Outcome
+The outcome of this project will be a GUI application all people can use to get & set information . This will also be able to use for browse necessry sites. 
+
 #### Conclusion:
 This was a great experience doing this project. This project was intended to make the DIU system easier and reliable. I hope the intention of the program gets full filled.. The challenges we faced and the learning we have gone through will come in great help in the future.
 
