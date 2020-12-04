@@ -160,7 +160,7 @@ teacher: Using this database you can add a teacher’s information and delete th
 #### Conclusion:
 This was a great experience doing this project. This project was intended to make the DIU system easier and reliable. I hope the intention of the program gets full filled.. The challenges we faced and the learning we have gone through will come in great help in the future.
 
-  ~~Thank you for using our application~~ 
+  ------------------------------Thank you for using our application------------------------------
   
   
 DIU Assist v1.5 © Fantastic Four ©2020 Fantastic Four. All rights reserved
