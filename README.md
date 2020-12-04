@@ -70,7 +70,7 @@ In our project Literature Review includes whether any such application was creat
 ![diuassist11](https://user-images.githubusercontent.com/60839928/101143419-0e8fa080-3641-11eb-8567-7246934a0403.png)
 ![diuassist12](https://user-images.githubusercontent.com/60839928/101143422-0f283700-3641-11eb-9a30-3c3ab89f8c43.png)
        
-## 6.	Home Page (View Teachers) 
+### 6.	Home Page (View Teachers) 
        Select..,Search, Delete & Update
        
        
