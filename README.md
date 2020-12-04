@@ -4,8 +4,8 @@ Basically our software will handle the all basic work of a computer science  stu
 ## Project Title : DIU Student Support System.
 ## Project Name : DIU Assist.
 
-![diuassist1](https://user-images.githubusercontent.com/60839928/101142729-33cfdf00-3640-11eb-9cf0-d39fd9736cba.png)
-![diuassist2](https://user-images.githubusercontent.com/60839928/101142740-36cacf80-3640-11eb-8a23-8bf5f511ece0.png)
+![diuassist1](https://user-images.githubusercontent.com/60839928/101146579-5e706680-3645-11eb-9464-1a8cb2e97551.png)
+![diuassist2](https://user-images.githubusercontent.com/60839928/101146587-603a2a00-3645-11eb-900f-d6e6b72f37c5.png)
 
 
 
@@ -39,14 +39,15 @@ Motivation is really the reason why we want to work on this project. Among the p
 In our project Literature Review includes whether any such application was created before us. Even before us, an app was created which is known as DI U Smart App in the Play Store. We are working in a very special way with time, so that in a very short time the user can move from one place to another as he needs. His time complexity should be reduced. He should be able to access everything on the bus without installing anything in a very short time.
 
 
-#### Features :
+## Features :
 ### 1.	Log in 
 
-![diuassist1](https://user-images.githubusercontent.com/60839928/101142729-33cfdf00-3640-11eb-9cf0-d39fd9736cba.png)
+![diuassist1](https://user-images.githubusercontent.com/60839928/101146579-5e706680-3645-11eb-9464-1a8cb2e97551.png)
+
 
 ### 2.	Home Page (Quick Assist) 
 
-![diuassist2](https://user-images.githubusercontent.com/60839928/101142740-36cacf80-3640-11eb-8a23-8bf5f511ece0.png)
+![diuassist2](https://user-images.githubusercontent.com/60839928/101146587-603a2a00-3645-11eb-900f-d6e6b72f37c5.png)
 
 ### 3.	Home Page (Add Students) 
 
@@ -70,7 +71,7 @@ In our project Literature Review includes whether any such application was creat
 ![diuassist11](https://user-images.githubusercontent.com/60839928/101143419-0e8fa080-3641-11eb-8567-7246934a0403.png)
 ![diuassist12](https://user-images.githubusercontent.com/60839928/101143422-0f283700-3641-11eb-9a30-3c3ab89f8c43.png)
        
-## 6.	Home Page (View Teachers) 
+### 6.	Home Page (View Teachers) 
        Select..,Search, Delete & Update
        
        
@@ -104,6 +105,8 @@ JDK version: 1.8
 
 Download Link : https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html
 
+![diuassist22](https://user-images.githubusercontent.com/60839928/101145236-b4440f00-3643-11eb-96f9-2aeeb7e45b43.png)
+
 Libraries:
 
 MySQL JDBC Driver.
@@ -120,15 +123,29 @@ DBMS: MySQL.
 
 Download Link: https://www.apachefriends.org/download.html
 
+
+![diuassist21](https://user-images.githubusercontent.com/60839928/101145321-d2aa0a80-3643-11eb-99e9-95567f1f04e0.png)
+
+
 #### Database Connection: 
 After installing XAMPP, you need to log in to XAMPP and start its Apache and MySQL databases. Then by clicking on My SQL Admin we will get our desired database.
+
+
  
 student: Using this database you can add a student's information and delete the information.
 teacher: Using this database you can add a teacher’s information and delete the information.
 
 
+
+![diuassist23](https://user-images.githubusercontent.com/60839928/101145369-e3f31700-3643-11eb-924a-1c1e529c9472.png)
+![diuassist24](https://user-images.githubusercontent.com/60839928/101145374-e5bcda80-3643-11eb-92a9-4de26a475a20.png)
+![diuassist25](https://user-images.githubusercontent.com/60839928/101145378-e6557100-3643-11eb-85d7-160c9852d109.png)
+
+
+
+
 #### Future Update:
-•	Search from Database
+•	Dynamic Search from Database
 •	Relational DBMS
 •	Move into Web and Android Application
 
