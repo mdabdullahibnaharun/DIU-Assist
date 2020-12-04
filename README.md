@@ -4,8 +4,8 @@ Basically our software will handle the all basic work of a computer science  stu
 ## Project Title : DIU Student Support System.
 ## Project Name : DIU Assist.
 
-![diuassist1](https://user-images.githubusercontent.com/60839928/101142729-33cfdf00-3640-11eb-9cf0-d39fd9736cba.png)
-![diuassist2](https://user-images.githubusercontent.com/60839928/101142740-36cacf80-3640-11eb-8a23-8bf5f511ece0.png)
+![diuassist1](https://user-images.githubusercontent.com/60839928/101146579-5e706680-3645-11eb-9464-1a8cb2e97551.png)
+![diuassist2](https://user-images.githubusercontent.com/60839928/101146587-603a2a00-3645-11eb-900f-d6e6b72f37c5.png)
 
 
 
@@ -39,14 +39,15 @@ Motivation is really the reason why we want to work on this project. Among the p
 In our project Literature Review includes whether any such application was created before us. Even before us, an app was created which is known as DI U Smart App in the Play Store. We are working in a very special way with time, so that in a very short time the user can move from one place to another as he needs. His time complexity should be reduced. He should be able to access everything on the bus without installing anything in a very short time.
 
 
-#### Features :
+## Features :
 ### 1.	Log in 
 
-![diuassist1](https://user-images.githubusercontent.com/60839928/101142729-33cfdf00-3640-11eb-9cf0-d39fd9736cba.png)
+![diuassist1](https://user-images.githubusercontent.com/60839928/101146579-5e706680-3645-11eb-9464-1a8cb2e97551.png)
+
 
 ### 2.	Home Page (Quick Assist) 
 
-![diuassist2](https://user-images.githubusercontent.com/60839928/101142740-36cacf80-3640-11eb-8a23-8bf5f511ece0.png)
+![diuassist2](https://user-images.githubusercontent.com/60839928/101146587-603a2a00-3645-11eb-900f-d6e6b72f37c5.png)
 
 ### 3.	Home Page (Add Students) 
 
