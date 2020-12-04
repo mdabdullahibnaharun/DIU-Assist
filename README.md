@@ -142,6 +142,7 @@ teacher: Using this database you can add , seach , update a teacher’s informat
 #### Future Update:
 •	Dynamic Search from Database
 •	Relational DBMS
+•	Routine and Event's management
 •	Move into Web and Android Application
 
 
