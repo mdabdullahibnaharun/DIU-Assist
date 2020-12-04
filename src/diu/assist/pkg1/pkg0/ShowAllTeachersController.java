@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+//imports
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -108,6 +109,7 @@ public class ShowAllTeachersController implements Initializable {
         
     }
     
+    //delete button action
     @FXML
     private void tdeleteBtn(ActionEvent event) throws SQLException {
         try {
@@ -124,6 +126,7 @@ public class ShowAllTeachersController implements Initializable {
         }
     }
     
+    //search button action
     @FXML
     private void searchBtn(ActionEvent event) {
         String id = tsearchField.getText();
@@ -142,6 +145,7 @@ public class ShowAllTeachersController implements Initializable {
         }
     }
 
+    //update button action
     @FXML
     private void tupdateRecord(ActionEvent event) throws IOException {
         teacherTable.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);

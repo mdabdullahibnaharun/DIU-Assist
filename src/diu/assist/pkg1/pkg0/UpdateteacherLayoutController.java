@@ -72,6 +72,7 @@ public class UpdateteacherLayoutController implements Initializable {
         tfacultyField.setText(teacher2.getTfaculty());
     }
 
+    //reset button action
     @FXML
     private void treset(ActionEvent event) {
         tslnoField.clear();
@@ -87,6 +88,7 @@ public class UpdateteacherLayoutController implements Initializable {
         notification.setText("");
     }
 
+    //update button action
     @FXML
     private void tupdateRecord(ActionEvent event) throws SQLException {
 
@@ -121,11 +123,11 @@ public class UpdateteacherLayoutController implements Initializable {
             tdepartmentField.clear();
             tfacultyField.clear();
             tteacherinitialField.clear();
-
+            notification.setText("");
             notification.setText("Data Updated Successfully...");
+        
 
         } catch (NumberFormatException e) {
-
             notification.setText("Sorry Can't Update Data to DataBase");
         }
     }

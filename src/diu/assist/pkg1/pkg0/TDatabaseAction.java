@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+//imports
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,24 +22,28 @@ import javafx.fxml.Initializable;
  * @author Dell
  */
 public class TDatabaseAction implements Initializable{
+    
+    //constructor    
+    public TDatabaseAction(){
+        
+    }
+    
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    public TDatabaseAction(){
-        
-    }
-    
-    Connection getConnection() throws SQLException{
+
+    //get connection from database
+    public Connection getConnection() throws SQLException{
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/diuassist_dbms","root","");
         Statement statement = conn.createStatement();
         statement.close();
         return conn;
     }
     
-    ObservableList<Teacher> getAllTeachers() throws SQLException{
+    //get teachers data from database
+    public ObservableList<Teacher> getAllTeachers() throws SQLException{
         ObservableList<Teacher> teachList = FXCollections.observableArrayList();
         Connection conn = getConnection();
         try (Statement statement = conn.createStatement()) {
@@ -65,7 +70,8 @@ public class TDatabaseAction implements Initializable{
         return teachList;
     }
     
-    String insertTeacher(Teacher teacher) throws SQLException{
+    //insert teachers data in database
+    public String insertTeacher(Teacher teacher) throws SQLException{
         Connection conn = getConnection();
         Statement statement = conn.createStatement();
         String query = "insert into teacher "+"values("+teacher.getTslno()+",'"+teacher.getTid()+"','"+teacher.getTteacherinitial()+"','"+teacher.getTname()+"','"+teacher.getTmobile()+"','"+teacher.getTemail()+"','"+teacher.getTcoursecode()+"','"+teacher.getTcoursename()+"','"+teacher.getTdepartment()+"','"+teacher.getTfaculty()+"')" ;
@@ -80,7 +86,7 @@ public class TDatabaseAction implements Initializable{
         }
     }
     
-    
+    //delete teachers data in database
     void deletTeachers(ObservableList<Teacher> selectedteachers) throws SQLException{
         Connection conn = getConnection();
         try (Statement statement = conn.createStatement()) {
@@ -91,6 +97,7 @@ public class TDatabaseAction implements Initializable{
         }
     }
     
+    //update teachers data in database
     public void updateTeacher(Teacher teach)throws SQLException{
         Teacher teacher = teach;
         Connection conn = getConnection();
@@ -105,5 +112,4 @@ public class TDatabaseAction implements Initializable{
     }
 
 
-    
 }

@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+//imports
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -27,7 +28,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -103,6 +103,7 @@ public class ShowAllStudentsController implements Initializable {
 
     }
 
+    //delete button action
     @FXML
     private void deleteRecords(ActionEvent event) throws SQLException {
         try {
@@ -120,6 +121,7 @@ public class ShowAllStudentsController implements Initializable {
 
     }
 
+    //search button action
     @FXML
     private void searchBtn(ActionEvent event) {
         String id = ssearchField.getText();
@@ -138,6 +140,7 @@ public class ShowAllStudentsController implements Initializable {
         }
     }
 
+    //update button action
     @FXML
     private void updateRecord(ActionEvent event) {
         studentTable.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
@@ -156,7 +159,6 @@ public class ShowAllStudentsController implements Initializable {
             stage3.resizableProperty().set(false);
             stage3.show();
         } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 

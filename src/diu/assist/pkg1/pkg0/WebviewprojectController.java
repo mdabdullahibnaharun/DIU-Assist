@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+//imports
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -54,6 +55,10 @@ public class WebviewprojectController implements Initializable {
     @FXML
     private BorderPane webpane;
 
+    //constructor
+    public WebviewprojectController() {
+    }
+    
     /**
      * Initializes the controller class.
      *
@@ -61,7 +66,6 @@ public class WebviewprojectController implements Initializable {
      * @param rb
      */
     @Override
-
     public void initialize(URL url, ResourceBundle rb) {
         try {
             // TODO
@@ -70,9 +74,6 @@ public class WebviewprojectController implements Initializable {
             Logger.getLogger(WebviewprojectController.class.getName()).log(Level.SEVERE, null, ex);
         }
         searchField.clear();
-    }
-
-    public WebviewprojectController() {
     }
 
     @FXML
@@ -216,6 +217,8 @@ public class WebviewprojectController implements Initializable {
         browseNow("http://international.daffodilvarsity.edu.bd/index.php/events/useful-links");
     }
 
+    
+    //forword & back button action
     @FXML
     private void backBtn(ActionEvent event) {
         try {
@@ -234,6 +237,7 @@ public class WebviewprojectController implements Initializable {
         }
     }
 
+    //search button action
     @FXML
     private void searchBtn(ActionEvent event)throws URISyntaxException, IOException {
         webengine = webview.getEngine();
@@ -277,13 +281,15 @@ public class WebviewprojectController implements Initializable {
         searchField.clear();
     }
 
+    //zoom out action
     @FXML
     private void zoomoutBtn(ActionEvent event) {
         double size = 1.0;
         size = webview.getZoom() - 0.1;
         webview.setZoom(size);
     }
-
+    
+    //zoom out action
     @FXML
     private void zoomInBtn(ActionEvent event) {
         double size = 1.0;
@@ -295,6 +301,7 @@ public class WebviewprojectController implements Initializable {
         browseNow(url);
     }
 
+    //browse method
     /**
      *
      * @param o

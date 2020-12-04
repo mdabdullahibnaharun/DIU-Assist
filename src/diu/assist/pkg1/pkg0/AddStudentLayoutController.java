@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+//imports
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -69,6 +70,7 @@ public class AddStudentLayoutController implements Initializable {
         }
     }
 
+    //serial no field action
     @FXML
     private void slFieldAction(KeyEvent event) {
         notification.setText("");
@@ -85,6 +87,7 @@ public class AddStudentLayoutController implements Initializable {
 
     }
 
+    //reset button action
     @FXML
     private void reset(ActionEvent event) {
         slnoField.clear();
@@ -98,6 +101,7 @@ public class AddStudentLayoutController implements Initializable {
         notification.setText("");
     }
 
+    //save button action
     @FXML
     private void save(ActionEvent event) throws SQLException{
            
@@ -147,6 +151,7 @@ public class AddStudentLayoutController implements Initializable {
         }
     }
 
+    //save button action
     @FXML
     private void saveBtn(MouseEvent event) throws SQLException{
               if(slnoField.getText().equals("")){

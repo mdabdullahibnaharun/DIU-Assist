@@ -73,6 +73,7 @@ public class DIUAssist10 extends Application {
     /**
      * @param args the command line arguments
      */
+    //main method
     public static void main(String[] args) {
         launch(args);
     }

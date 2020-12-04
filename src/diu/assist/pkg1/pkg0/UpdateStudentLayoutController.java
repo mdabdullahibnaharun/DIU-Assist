@@ -5,6 +5,7 @@
  */
 package diu.assist.pkg1.pkg0;
 
+//imports
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -67,6 +68,7 @@ public class UpdateStudentLayoutController implements Initializable {
 
     }
 
+    //reset button action
     @FXML
     private void reset(ActionEvent event) {
         slnoField.clear();
@@ -80,6 +82,7 @@ public class UpdateStudentLayoutController implements Initializable {
         notification.setText("");
     }
 
+    //update button action
     @FXML
     private void update(ActionEvent event) throws SQLException {
 
@@ -100,7 +103,6 @@ public class UpdateStudentLayoutController implements Initializable {
 
             Student std = new Student(slno, id, batch, name, mobile, email, section, department);
             sdbAction.updateStudent(std);
-            notification.setText("Data Updated Successfully...");
             slnoField.clear();
             nameField.clear();
             idField.clear();
@@ -110,6 +112,7 @@ public class UpdateStudentLayoutController implements Initializable {
             batchField.clear();
             departmentField.clear();
             notification.setText("");
+            notification.setText("Data Updated Successfully...");
         } catch (NumberFormatException e) {
             notification.setText("Sorry Can't Update Data to DataBase");
         }

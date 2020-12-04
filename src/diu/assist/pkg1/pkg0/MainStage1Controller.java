@@ -5,6 +5,8 @@
  */
 package diu.assist.pkg1.pkg0;
 
+//imports 
+
 import static diu.assist.pkg1.pkg0.FXMLDocumentController.stage1;
 import java.io.IOException;
 import java.net.URL;
@@ -78,7 +80,8 @@ public class MainStage1Controller extends Thread implements Initializable {
         }
 
     }
-
+    
+    //aboutus button action
     @FXML
     private void aboutUs(ActionEvent event) {
         try {
@@ -91,6 +94,7 @@ public class MainStage1Controller extends Thread implements Initializable {
         }
     }
 
+    //quick assist button action
     @FXML
     private void quickAssist(ActionEvent event) throws IOException {
         try {
@@ -101,6 +105,7 @@ public class MainStage1Controller extends Thread implements Initializable {
         }
     }
 
+    //add student action
     @FXML
     private void addStdData(ActionEvent event) {
         try {
@@ -111,6 +116,7 @@ public class MainStage1Controller extends Thread implements Initializable {
         }
     }
 
+    //add teacher action
     @FXML
     private void addTecData(ActionEvent event) {
         try {
@@ -121,6 +127,7 @@ public class MainStage1Controller extends Thread implements Initializable {
         }
     }
 
+    //show students action
     @FXML
     private void showSudents(ActionEvent event) {
         try {
@@ -131,6 +138,7 @@ public class MainStage1Controller extends Thread implements Initializable {
         }
     }
 
+    //show teachers acton
     @FXML
     private void showTeachers(ActionEvent event) {
         try {
@@ -141,6 +149,7 @@ public class MainStage1Controller extends Thread implements Initializable {
         }
     }
 
+    //logout action
     @FXML
     private void logout(ActionEvent event) {
         DIUAssist10.stage.show();
@@ -158,6 +167,7 @@ public class MainStage1Controller extends Thread implements Initializable {
 
     }
 
+    //live time & date by using thread handeling
     private void timedate(boolean valu) {
         if (valu) {
             clock = new Thread() {

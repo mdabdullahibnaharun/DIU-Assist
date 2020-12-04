@@ -25,17 +25,17 @@ import javafx.fxml.Initializable;
  */
 public class SDatabaseAction implements Initializable{
 
+    //constructor
     public SDatabaseAction() {
     }
     
-       @Override
+      @Override
     public void initialize(URL location, ResourceBundle resources) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates
         
     }
     
-    
-
+    //get database connection method
     public Connection getConnection() throws SQLException{
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/diuassist_dbms","root","");
         Statement statement = conn.createStatement();
@@ -45,6 +45,7 @@ public class SDatabaseAction implements Initializable{
         
     }
    
+    //get students from database
     public ObservableList<Student> getAllStudents() throws SQLException {
 
         ObservableList<Student> stdList = FXCollections.observableArrayList();
@@ -74,6 +75,7 @@ public class SDatabaseAction implements Initializable{
 
     }
 
+    //insert students data into database
     public String insertStudent(Student student) throws SQLException {
         Connection conn = getConnection();
         Statement statement = conn.createStatement();
@@ -88,6 +90,7 @@ public class SDatabaseAction implements Initializable{
         }
     }
 
+    //delete dada from database
     public void deletStudents(ObservableList<Student> selectedStudents) throws SQLException {
         Connection conn = getConnection();
         try (Statement statement = conn.createStatement()) {
@@ -98,6 +101,7 @@ public class SDatabaseAction implements Initializable{
         }
     }
     
+    //update data in database
     public void updateStudent(Student std) throws SQLException{
         Student student = std;
         Connection conn = getConnection();
