@@ -4,6 +4,10 @@ Basically our software will handle the all basic work of a computer science  stu
 ## Project Title : DIU Student Support System.
 ## Project Name : DIU Assist.
 
+![diuassist1](https://user-images.githubusercontent.com/60839928/101142729-33cfdf00-3640-11eb-9cf0-d39fd9736cba.png)
+![diuassist2](https://user-images.githubusercontent.com/60839928/101142740-36cacf80-3640-11eb-8a23-8bf5f511ece0.png)
+
+
 
 #### Project Type :
 Our project is a graphical user interface project. This is actually a project of Java FX and Java Swing. This project is basically a desktop application. Through this, the user will be able to create the software the way he wants, which means that this software will actually play an important role in saving time. In this project, a Daffodil student is going to work with everything he/she uses in his daily life, from the student portal to the BLC as well as from the account office and faculty site.
@@ -37,7 +41,11 @@ In our project Literature Review includes whether any such application was creat
 
 #### Features :
 1.	Log in 
+![diuassist1](https://user-images.githubusercontent.com/60839928/101142729-33cfdf00-3640-11eb-9cf0-d39fd9736cba.png)
+
 2.	Home Page (Quick Assist) 
+![diuassist2](https://user-images.githubusercontent.com/60839928/101142740-36cacf80-3640-11eb-8a23-8bf5f511ece0.png)
+
 3.	Home Page (Add Students) 
 4.	Home Page (Add Teachers) 
 5.	Home Page (View Students and delete Students) 
