@@ -104,6 +104,8 @@ JDK version: 1.8
 
 Download Link : https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html
 
+![diuassist22](https://user-images.githubusercontent.com/60839928/101145236-b4440f00-3643-11eb-96f9-2aeeb7e45b43.png)
+
 Libraries:
 
 MySQL JDBC Driver.
@@ -120,15 +122,29 @@ DBMS: MySQL.
 
 Download Link: https://www.apachefriends.org/download.html
 
+
+![diuassist21](https://user-images.githubusercontent.com/60839928/101145321-d2aa0a80-3643-11eb-99e9-95567f1f04e0.png)
+
+
 #### Database Connection: 
 After installing XAMPP, you need to log in to XAMPP and start its Apache and MySQL databases. Then by clicking on My SQL Admin we will get our desired database.
+
+
  
 student: Using this database you can add a student's information and delete the information.
 teacher: Using this database you can add a teacher’s information and delete the information.
 
 
+
+![diuassist23](https://user-images.githubusercontent.com/60839928/101145369-e3f31700-3643-11eb-924a-1c1e529c9472.png)
+![diuassist24](https://user-images.githubusercontent.com/60839928/101145374-e5bcda80-3643-11eb-92a9-4de26a475a20.png)
+![diuassist25](https://user-images.githubusercontent.com/60839928/101145378-e6557100-3643-11eb-85d7-160c9852d109.png)
+
+
+
+
 #### Future Update:
-•	Search from Database
+•	Dynamic Search from Database
 •	Relational DBMS
 •	Move into Web and Android Application
 
