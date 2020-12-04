@@ -40,19 +40,55 @@ In our project Literature Review includes whether any such application was creat
 
 
 #### Features :
-1.	Log in 
+### 1.	Log in 
+
 ![diuassist1](https://user-images.githubusercontent.com/60839928/101142729-33cfdf00-3640-11eb-9cf0-d39fd9736cba.png)
 
-2.	Home Page (Quick Assist) 
+### 2.	Home Page (Quick Assist) 
+
 ![diuassist2](https://user-images.githubusercontent.com/60839928/101142740-36cacf80-3640-11eb-8a23-8bf5f511ece0.png)
 
-3.	Home Page (Add Students) 
-4.	Home Page (Add Teachers) 
-5.	Home Page (View Students and delete Students) 
-       Select.. Delete & Update
-6.	Home Page (View Teacherss and delete Teacherss) 
-       Select.. Delete & Update
-6.	About us 
+### 3.	Home Page (Add Students) 
+
+![diuassist3](https://user-images.githubusercontent.com/60839928/101143145-b9538f00-3640-11eb-80d8-8eab81379a46.png)
+![diuassist4](https://user-images.githubusercontent.com/60839928/101143150-ba84bc00-3640-11eb-927e-3db5981551ce.png)
+![diuassist5](https://user-images.githubusercontent.com/60839928/101143152-bb1d5280-3640-11eb-843b-5d41d56ac732.png)
+
+### 4.	Home Page (Add Teachers) 
+
+![diuassist6](https://user-images.githubusercontent.com/60839928/101143317-eb64f100-3640-11eb-9ed2-32a6d9a897a8.png)
+![diuassist7](https://user-images.githubusercontent.com/60839928/101143322-ec961e00-3640-11eb-9705-c05f454d5ac0.png)
+
+
+### 5.	Home Page (View Students) 
+       Select..,Search, Delete & Update
+       
+       
+![diuassist8](https://user-images.githubusercontent.com/60839928/101143411-0c2d4680-3641-11eb-8dd2-6b14e0a350f4.png)
+![diuassist9](https://user-images.githubusercontent.com/60839928/101143414-0d5e7380-3641-11eb-8cb2-1cdfe8bb9a68.png)
+![diuassist10](https://user-images.githubusercontent.com/60839928/101143418-0df70a00-3641-11eb-9672-4d46d77a6fab.png)
+![diuassist11](https://user-images.githubusercontent.com/60839928/101143419-0e8fa080-3641-11eb-8567-7246934a0403.png)
+![diuassist12](https://user-images.githubusercontent.com/60839928/101143422-0f283700-3641-11eb-9a30-3c3ab89f8c43.png)
+       
+## 6.	Home Page (View Teachers) 
+       Select..,Search, Delete & Update
+       
+       
+![diuassist13](https://user-images.githubusercontent.com/60839928/101143718-7e059000-3641-11eb-801f-914749fe088c.png)
+![diuassist14](https://user-images.githubusercontent.com/60839928/101143724-7f36bd00-3641-11eb-974f-b203fc4db37b.png)
+![diuassist15](https://user-images.githubusercontent.com/60839928/101143727-7fcf5380-3641-11eb-96b5-5401d05578a9.png)
+![diuassist16](https://user-images.githubusercontent.com/60839928/101143728-8067ea00-3641-11eb-9981-13baef46037d.png)
+![diuassist17](https://user-images.githubusercontent.com/60839928/101143729-81008080-3641-11eb-9d2a-3e053248f798.png)
+![diuassist18](https://user-images.githubusercontent.com/60839928/101143732-81008080-3641-11eb-81b6-7a37fd349f9f.png)
+
+       
+### 6.	About us 
+
+![diuassist19](https://user-images.githubusercontent.com/60839928/101143770-91186000-3641-11eb-9cdd-48d2f819e0a1.png)
+
+### 7.  Logout
+
+![diuassist20](https://user-images.githubusercontent.com/60839928/101143830-aa211100-3641-11eb-9b25-99b927f1b964.png)
        
 
         
