@@ -5,7 +5,7 @@ Basically our software will handle the all basic work of a computer science  stu
 ## Project Name : DIU Assist.
 
 ![diuassist1](https://user-images.githubusercontent.com/60839928/101146579-5e706680-3645-11eb-9464-1a8cb2e97551.png)
-![diuassist2](https://user-images.githubusercontent.com/60839928/101146587-603a2a00-3645-11eb-900f-d6e6b72f37c5.png \{:height="50px" width="48px"}){:height="50px" width="48px"}
+![diuassist2](https://user-images.githubusercontent.com/60839928/101146587-603a2a00-3645-11eb-900f-d6e6b72f37c5.png)
 
 
 
