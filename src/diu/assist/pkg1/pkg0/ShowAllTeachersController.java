@@ -155,7 +155,7 @@ public class ShowAllTeachersController implements Initializable {
             Image ico4 = new Image("/icons/mainicon.png");
             stage4 = new Stage();
             stage4.setScene(scene4);
-            stage4.setTitle("DIU Assist 1.5");
+            stage4.setTitle("DIU Assist v1.5");
             stage4.getIcons().add(ico4);
             stage4.resizableProperty().set(false);
             stage4.show();

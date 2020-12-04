@@ -62,7 +62,7 @@ public class FXMLDocumentController implements Initializable {
                 Scene scene = new Scene(pane);
                 Image ico = new Image("/icons/mainicon.png");
                 stage1.setScene(scene);
-                stage1.setTitle("DIU Assist 1.5");
+                stage1.setTitle("DIU Assist v1.5");
                 stage1.getIcons().add(ico);
                 stage1.resizableProperty().set(false);
                 stage1.show();

@@ -40,7 +40,7 @@ public class DIUAssist10 extends Application {
         
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         Scene scene = new Scene(root);
-        stage.setTitle("DIU Assist");
+        stage.setTitle("DIU Assist v1.5");
         Image img = new Image("/icons/mainicon.png");
         stage.getIcons().add(img);
         stage.setScene(scene);
