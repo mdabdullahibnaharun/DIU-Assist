@@ -12,16 +12,10 @@ Basically our software will handle the all basic work of a computer science  stu
 #### Project Type :
 Our project is a graphical user interface project. This is actually a project of Java FX and Java Swing. This project is basically a desktop application. Through this, the user will be able to create the software the way he wants, which means that this software will actually play an important role in saving time. In this project, a Daffodil student is going to work with everything he/she uses in his daily life, from the student portal to the BLC as well as from the account office and faculty site.
 
-#### Abstract :
-We will make this software using user case diagram. The main purpose of this is that students have to go to many places many times. Here all their links of varsity will be combined and the user will be made dependent. There will be no login-logout. It is only by downloading and installing the software that they will be able to use this software. The main motive of this software is to save our time. But we can reduce the time complexity of this software. This is our software apps or the way you go here, you can go to the link from there. Someone can again generate their own personal gender.
-
-#### Objective :
-Our main objective is to make our JAVA GUI application software user friendly. Because many people still have to work through links in many places. But those links are not close so there are many problems. That is why we are going to make a visual application. It will have all kinds of link information and some information offline so that it will help the students of the computer science department of the varsity to save them. Modern technology is brought in for modern solutions. We want to put everything together. So that it is being made by targeting the students so that they do not get into any problem.
+#### Description :
+Basically our software will handle the all basic work of a computer science student. where all the teachers and students info will be given, all social and important link also. There is also a login option for user, in this software it have its own browser which will make comfort for user.
 
 
-
-#### Motivation :
-Motivation is really the reason why we want to work on this project. Among the projects that were on the project list, the reason for choosing this project, We all wanted our team all the time, we would work on real life projects. So that a specific population can use this application. We want to build a real life project with everything we have learned from our Software Programming II  course.
 
 #### Requirement Specification :                                         
 •	This software is made with a use case diagram.
@@ -132,8 +126,9 @@ After installing XAMPP, you need to log in to XAMPP and start its Apache and MyS
 
 
  
-student: Using this database you can add a student's information and delete the information.
-teacher: Using this database you can add a teacher’s information and delete the information.
+student: Using this database you can add , seach , update a student's information and delete those information.
+
+teacher: Using this database you can add , seach , update a teacher’s information and delete those information.
 
 
 
