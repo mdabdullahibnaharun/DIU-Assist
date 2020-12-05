@@ -115,7 +115,9 @@ public class ShowAllTeachersController implements Initializable {
         try {
             ObservableList<Teacher> selectedTeachers = FXCollections.observableArrayList();
             selectedTeachers = teacherTable.getSelectionModel().getSelectedItems();
-            
+            if(selectedTeachers==null){
+                return;
+            }
             TDatabaseAction tdbAction = new TDatabaseAction();
             tdbAction.deletTeachers(selectedTeachers);
            if( AddTeacherLayoutController.teachList.removeAll(selectedTeachers)){

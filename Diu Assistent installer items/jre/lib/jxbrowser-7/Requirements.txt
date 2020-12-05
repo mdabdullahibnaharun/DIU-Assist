@@ -1,0 +1,54 @@
+SOFTWARE REQUIREMENTS
+===============================================================================
+
+1. Operating Systems
+-------------------------------------------------------------------------------
+JxBrowser runs on Windows 32-bit and 64-bit, macOS, and Linux 64-bit platforms:
+
+Windows (32-bit and 64-bit):
+Windows 7
+Windows 8
+Windows 8.1
+Windows 10
+Windows Server 2008 R2
+Windows Server 2012
+Windows Server 2012 R2
+Windows Server 2016
+Windows Server 2019
+
+Linux (64-bit):
+Ubuntu 14.04+
+Debian 8+
+Fedora Linux 24+
+openSUSE 13.3+
+RedHat Enterprise Linux 7
+
+macOS (64-bit):
+macOS Yosemite 10.10 or later (Intel Core i5, i7, i9)
+
+2. JDK (32-bit & 64-bit)
+-------------------------------------------------------------------------------
+Swing:  Oracle JDK 8.x, 10.x and higher, OpenJDK 11.x and higher.
+JavaFX: Oracle JDK 8.x and 10.x.
+SWT:    Oracle JDK 8.x and 10.x.
+
+HARDWARE REQUIREMENTS
+===============================================================================
+
+CPU: Intel Pentium 4 or later that’s SSE2 capable.
+RAM: 512 MB minimum.
+Hard Disk Space: 350 MB.
+
+HiDPI Monitors & Retina
+-------------------------------------------------------------------------------
+JxBrowser supports HiDPI monitors on both Windows and macOS platforms with
+Retina displays.
+
+ARM
+-------------------------------------------------------------------------------
+JxBrowser supports Linux ARM 64-bit. It has been tested with the following
+configuration and should work in a similar configuration as well:
+- Raspberry Pi 2 (A 900MHz quad-core ARM Cortex-A7 CPU) and
+  AWS (AWS Graviton Processors);
+- Ubuntu 16.04 and 18.04 LTS 64-bit;
+- Oracle JDK 8 64-bit (No GUI provided by JRE), OpenJDK 11 (Swing and JavaFX).

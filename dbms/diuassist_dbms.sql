@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2020 at 10:12 AM
+-- Generation Time: Dec 05, 2020 at 05:17 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.26
 
@@ -44,9 +44,10 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`sl`, `id`, `batch`, `name`, `mobile`, `email`, `section`, `department`) VALUES
-(1, '193-15-13426', '54', 'Md. Abdullah Ibna Harun', '01786287766', 'abdullah15-13426@diu.edu.bd', 'O1', 'CSE'),
+(1, '193-15-13426', '54', 'Md. Abdullah Ibna Harun', '01786287766', 'abdullah15-13426@diu.edu.bd', 'A', 'CSE'),
 (2, '193-15-13416', '54', 'Md Mahfuzur Rahman', '01405145165', 'zumafu@diu.edu.bd', 'A', 'CSE'),
-(3, '193-15-13355', '54', 'Mahade Hassan Forhad ', '0116161651', 'mahade15-13355@diu.edu.bd', 'A', 'CSE');
+(3, '193-15-13355', '54', 'Mahade Hassan Forhad ', '01161616517', 'mahade15-13355@diu.edu.bd', 'A', 'CSE'),
+(4, '193-15-13374', '54', 'Abidur Rahman Khan', '01755116165', 'abidur15-13374@diu.edu.bd', 'A', 'CSE');
 
 -- --------------------------------------------------------
 
@@ -73,7 +74,8 @@ CREATE TABLE `teacher` (
 
 INSERT INTO `teacher` (`tslno`, `tid`, `tteacherinitial`, `tname`, `tmobile`, `temail`, `tcoursecode`, `tcoursename`, `tdepartment`, `tfaculty`) VALUES
 (1, '710001961', 'MJM', 'Mr. Md. Jueal Mia', '+8801911142859', 'jueal.cse@diu.edu.bd', 'CSE 113', 'Software Project 2', 'CSE', 'FSIT'),
-(2, '74539653436', 'SAH', 'Sayed Akhter Hossain', '0198461351', 'SAH@diu.edu.bd', 'CSE 221', 'OOP', 'CSE', 'FSIT');
+(2, '700007222', 'SAH', 'Sayed Akhter Hosain', '+8801752223871', 'sah@diu.edu.bd', 'CSE 221', 'OOP', 'CSE', 'FSIT'),
+(3, '1001664', 'SA', 'Sarmin Akhter', '+8801841565188', 'sa.cse@diu.edu.bd', 'END 111', 'Basic English', 'English', 'GED');
 
 --
 -- Indexes for dumped tables
