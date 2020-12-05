@@ -67,7 +67,8 @@ In our project Literature Review includes whether any such application was creat
 ### 6.	Home Page (View Teachers) 
        Select..,Search, Delete & Update
        
-       
+
+![diuassist26](https://user-images.githubusercontent.com/60839928/101242922-f4c88900-3726-11eb-8774-75c318e08b62.png)
 ![diuassist13](https://user-images.githubusercontent.com/60839928/101143718-7e059000-3641-11eb-801f-914749fe088c.png)
 ![diuassist14](https://user-images.githubusercontent.com/60839928/101143724-7f36bd00-3641-11eb-974f-b203fc4db37b.png)
 ![diuassist15](https://user-images.githubusercontent.com/60839928/101143727-7fcf5380-3641-11eb-96b5-5401d05578a9.png)
