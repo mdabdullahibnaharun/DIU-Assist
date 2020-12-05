@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="1286.0" style="-fx-border-color: #b7c6e8; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diu.assist.pkg1.pkg0.AddStudentLayoutController">
+   <top>
+      <AnchorPane prefHeight="61.0" prefWidth="1246.0" style="-fx-background-color: #5f74b3;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="499.0" layoutY="10.0" prefHeight="39.0" prefWidth="235.0" text="Student Data Entry" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane onDragDetected="#saveBtn" prefHeight="770.0" prefWidth="1226.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="200.0" layoutY="141.0" style="-fx-font-size: 17;" text="Id No." />
+            <Label layoutX="200.0" layoutY="215.0" style="-fx-font-size: 17;" text="Name :" />
+            <Label fx:id="notification" layoutX="204.0" layoutY="497.0" prefHeight="25.0" prefWidth="822.0" style="-fx-font-size: 17;" textAlignment="CENTER" />
+            <Label layoutX="200.0" layoutY="95.0" style="-fx-font-size: 17;" text="Serial No." />
+            <Label layoutX="201.0" layoutY="412.0" style="-fx-font-size: 17;" text="Department :" />
+            <Label layoutX="200.0" layoutY="257.0" style="-fx-font-size: 17;" text="Mobile : " />
+            <Label layoutX="201.0" layoutY="309.0" style="-fx-font-size: 17;" text="Email :" />
+            <Label layoutX="201.0" layoutY="357.0" style="-fx-font-size: 17;" text="Section :" />
+            <TextField fx:id="slnoField" layoutX="344.0" layoutY="94.0" onKeyPressed="#slFieldAction" prefHeight="31.0" prefWidth="254.0" />
+            <TextField fx:id="idField" layoutX="344.0" layoutY="136.0" prefHeight="31.0" prefWidth="256.0" />
+            <TextField fx:id="nameField" layoutX="344.0" layoutY="218.0" prefHeight="31.0" prefWidth="257.0" />
+            <TextField fx:id="mobileField" layoutX="344.0" layoutY="261.0" prefHeight="31.0" prefWidth="257.0" />
+            <TextField fx:id="emailField" layoutX="344.0" layoutY="307.0" prefHeight="31.0" prefWidth="258.0" />
+            <TextField fx:id="sectionField" layoutX="344.0" layoutY="356.0" prefHeight="31.0" prefWidth="257.0" />
+            <TextArea fx:id="departmentField" layoutX="344.0" layoutY="402.0" prefHeight="60.0" prefWidth="259.0" />
+            <Button layoutX="185.0" layoutY="546.0" mnemonicParsing="false" onAction="#save" prefHeight="39.0" prefWidth="202.0" text="Save">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_database_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button layoutX="398.0" layoutY="546.0" mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="203.0" text="Reset">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_reset_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <ImageView fitHeight="225.0" fitWidth="251.0" layoutX="690.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icons/icons8_student_male_200px_1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="199.0" layoutY="177.0" style="-fx-font-size: 17;" text="Batch :" />
+            <TextField fx:id="batchField" layoutX="344.0" layoutY="177.0" prefHeight="31.0" prefWidth="257.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
