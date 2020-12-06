@@ -79,13 +79,13 @@ public class AddTeacherLayoutController implements Initializable {
         }
 
         for (Teacher teach : teachList) {
-            if (teach.getTslno() == Integer.parseInt(tslno)) {
+            if(teach.getTslno() == Integer.parseInt(tslno)) {
                 notification.setText("This SL no is already exist!! Please Try Another");
                 break;
+            } else {
             }
-            return;
         }
-        
+   
     }
 
     //save button action
