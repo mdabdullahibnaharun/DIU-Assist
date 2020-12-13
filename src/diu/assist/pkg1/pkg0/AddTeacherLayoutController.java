@@ -159,6 +159,7 @@ public class AddTeacherLayoutController implements Initializable {
         tidField.clear();
         tteacherinitialField.clear();
         tfacultyField.clear();
+        notification.setText("");
     }
 
 }
