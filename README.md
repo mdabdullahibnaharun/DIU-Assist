@@ -1,7 +1,6 @@
-# DIU-Assist-v1.5
 
 ## Project Title : DIU Student Support System.
-## Project Name : DIU Assist.
+# Project Name  : DIU Assist.
 
 ![diuassist1](https://user-images.githubusercontent.com/60839928/101146579-5e706680-3645-11eb-9464-1a8cb2e97551.png)
 ![diuassist2](https://user-images.githubusercontent.com/60839928/101146587-603a2a00-3645-11eb-900f-d6e6b72f37c5.png)
