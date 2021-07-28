@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="922.0" prefWidth="1575.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diu.assist.pkg1.pkg0.MainStage1Controller">
+   <top>
+      <AnchorPane prefHeight="47.0" prefWidth="1536.0" style="-fx-background-color: #4d79e8;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="92.0" layoutY="34.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="DIU Assistant" textAlignment="CENTER" wrappingWidth="182.359375">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Label layoutX="122.0" layoutY="43.0" text="Your Student Assist" textAlignment="CENTER" textFill="#f5f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Text fx:id="userMail" fill="WHITE" fontSmoothingType="LCD" layoutX="1180.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="263.6708984375" />
+            <ImageView fitHeight="49.0" fitWidth="49.0" layoutX="1116.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icons/icons8_checked_user_male_skin_type_7_96px.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" contentDisplay="TOP" layoutX="1179.0" layoutY="30.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0" prefWidth="212.0" style="-fx-background-color: #40c2ff;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="69.0" fitWidth="90.0" layoutX="23.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icons/icons8_women's_macbook_500px.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="dateField" fill="WHITE" fontSmoothingType="LCD" layoutX="617.0" layoutY="51.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="163.6708984375">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="timeField" fill="#fcfcfc" fontSmoothingType="LCD" layoutX="617.0" layoutY="29.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="158.6708984375">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="572.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icons/icons8_google_calendar_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="574.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icons/icons8_minute_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="831.0" prefWidth="196.0" spacing="5.0" style="-fx-border-color: #4d79e8; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="94.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icons/daffodil-international-university_logo.png" />
+               </image>
+            </ImageView>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#quickAssist" prefHeight="85.0" prefWidth="180.0" text="Quick Assist" textAlignment="CENTER" textFill="#0d0000">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_touchscreen_200px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#addStdData" prefHeight="98.0" prefWidth="180.0" text=" Student Data Entry" textAlignment="CENTER" textFill="#070000">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_id_curly_hair_male_student_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#addTecData" prefHeight="99.0" prefWidth="182.0" text="Teacher Data Entry" textAlignment="CENTER" textFill="#0a0000">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_man_teacher_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#showSudents" prefHeight="102.0" prefWidth="182.0" text="Vew Student Data" textAlignment="CENTER" textFill="#140000">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_find_user_male_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#showTeachers" prefHeight="100.0" prefWidth="182.0" text="Vew Teacher Data " textAlignment="CENTER" textFill="#030000">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_classroom_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#aboutUs" prefHeight="31.0" prefWidth="217.0" text="About Us" textAlignment="CENTER" textFill="#0d0000">
+               <VBox.margin>
+                  <Insets top="160.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icons/icons8_workspace_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="mainContant" focusTraversable="true" prefHeight="847.0" prefWidth="1387.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

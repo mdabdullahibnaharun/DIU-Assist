@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height:100hv;
+	overflow-x: hidden;
+}
+
+h1{
+	font-size: 26px;
+	text-align: center;
+	line-height: 15px 25px;
+	border-radius: 4px;
+}
+
+.ques-box {
+	width: 100%;
+	padding: 10px 25px;
+	margin: 50px auto 0 auto;
+	border-radius: 4px;
+}
+
+
+.option{
+	display: flex;
+	direction: row;
+	padding: 2px;
+}
+
+.title{
+	font-size: 15px;
+	font-weight:600;
+	color:red;
+}
+
+.option p{
+	margin-left: 20px;
+	padding-left : 20px;
+	line-height:20px;
+	position: relative;
+	padding-bottom:20px;
+	margin: 0px;
+}
+
+
+footer{
+	height: 80px;
+	text-align: center;
+	line-height:80px;
+}
