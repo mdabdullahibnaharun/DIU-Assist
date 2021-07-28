@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height:100hv;
+	overflow-x: hidden;
+}
+
+
+.main-container{
+	min-height:calc(100vh - 136px);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.card{
+	width: 100%;
+	max-width: 900px;
+	margin-top: 20px;
+	margin-left: 165px;
+}
+
+img{
+	width: 100px;
+	max-width: 350px;
+	position: flex;
+	display:block;
+	margin: -90px auto 60px auto;
+}
+
+.card button{
+	width: 45%;
+}
+
+footer{
+	height: 80px;
+	text-align: center;
+	line-height:80px;
+}
