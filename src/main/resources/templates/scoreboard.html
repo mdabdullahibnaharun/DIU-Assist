@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/score.css}">
+<title>Score Board</title>
+</head>
+
+<body>
+
+	<!--Navbar-->
+	<div th:insert="navbar.html :: navbar"></div>
+
+	<!-- Main Container Start -->
+	<div class="main-container container py-5 px-5 ">
+		<div class="image-box">
+			<img th:src="@{/images/leaderboard_80px.png}" alt="image">
+		</div>
+		<h3 class = "bg-info text-center text-light mb-5 p-1">Highest Scores of All Time</h3>
+		
+		<table class="table table-hover">
+			<tr>
+				<th>Serial No.</th>
+				<th>Name</th>
+				<th>Total Attempt</th>
+				<th>Correct Answer</th>
+				<th>Wrong Answer </th>
+			</tr>
+			<tr th:each = "score, i: ${sList}">
+				<td th:text = "${i.index+1}"></td>
+				<td th:text = "${score.username}"></td>
+				<td th:text = "${score.totalAttempt}"></td>
+				<td th:text = "${score.totalCorrect}"></td>
+				<td th:text = "${score.totalWrong}"></td>
+			</tr>
+			
+		</table>
+		
+	</div>
+
+
+	<!-- Importing Footer -->
+	<div th:insert="footer.html :: footer"></div>
+
+	<!-- Bootstrap JS -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

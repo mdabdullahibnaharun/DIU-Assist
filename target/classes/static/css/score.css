@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height:100hv;
+	overflow-x: hidden;
+}
+
+.main-container{
+	min-height:calc(100vh - 138px);
+}
+	
+table{
+	width: 100%;
+	text-align: center;
+}
+
+
+th,td{
+	padding: 20px;
+}
+
+.image-box{
+	grid-area:image-box;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+
+footer{
+	height: 80px;
+	text-align: center;
+	line-height:80px;
+}
